@@ -32,7 +32,7 @@
 body {
     background-color: #fafafa;
     overflow-x: hidden;
-    font-family: pacaembu-regular;
+    font-family: pacaembu-light;
     -ms-overflow-style: none;
 }
 h1 {
@@ -207,13 +207,31 @@ button {
     font-weight: 700;
 }
 
-.ob-article-container {
+.mw-article-container {
     max-width: 1200px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
+
+.mw-article-container .ob-article-container {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.ob-article-container .ob-aside {
+    margin-top:257px;
+}
+
+.ob-article-container .ob-aside .ob-aside-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
 
 .ob-article-content {
     display: flex;
@@ -252,40 +270,43 @@ button {
     top: 5px;
 }
 
-.info {
+
+
+
+.ob-article-content > article > .info {
     display:flex;
     flex-direction: row;
     align-items: center;
     gap:10px;
 }
 
-.info > a > img {
+.ob-article-content > article > .info > a > img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.info .info-post {
+.ob-article-content > article > .info .info-post {
     display:flex;
     flex-direction: column;
 }
 
-.info .info-post span:first-of-type {
+.ob-article-content > article > .info .info-post span:first-of-type {
     color: #726f73;
     font-family: inherit;
 }
 
-.info .info-post .info-post-publishDate {
+.ob-article-content > article > .info .info-post .info-post-publishDate {
     display:flex;
     flex-direction: row;
 }
 
-.info .info-post .info-post-publishDate span:first-of-type {
+.ob-article-content > article > .info .info-post .info-post-publishDate span:first-of-type {
     font-family: pacaembu-light;
 }
 
-.info .info-post .info-post-publishDate span {
+.ob-article-content > article > .info .info-post .info-post-publishDate span {
     color: #726f73;
     font-size: 14px;
     line-height: 16px;
