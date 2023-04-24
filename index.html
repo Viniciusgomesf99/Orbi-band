@@ -13,127 +13,97 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="nav-items">
-        <div class="nav-items-uol">
-          <a href="https://www.uol.com.br/">
-            <img
-              src="./assets/nav/logo_uol_white.svg"
-              alt="UOL - O melhor conteúdo"
-            />
-          </a>
-        </div>
-        <div class="nav-items-services">
-          <ul>
-            <li>
-              <a
-                href="https://www.ingresso.com/?utm_source=uol-parceiros&utm_medium=barrauol&utm_campaign=linkfixo_barrauol&utm_content=barrauol-link-ingressocom&utm_term=barrauol-ingressocom"
-                >INGRESSO.COM</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.uolhost.uol.com.br/?utm_source=midia-interna&utm_medium=barra_uol&utm_campaign=link_fixo_host&utm_content=parceiro"
-                >UOL HOST</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://pagseguro.uol.com.br/conta-digital/conta-digital-gratis/"
-                >PAGBANK</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://pagseguro.uol.com.br/?utm_source=midia-interna&utm_medium=barra_uol&utm_campaign=link_fixo_ps&utm_content=parceiro"
-                >PAGSEGURO</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.portaleducacao.com.br/cursos?utm_source=uol&utm_medium=header-menu&utm_campaign=cursos"
-                >CURSOS</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://play.uol.com.br/?utm_source=orbi.band.uol.com.br&utm_medium=barrauol&utm_campaign=linkfixo_barrauol&utm_term=barrauol-uolplay&utm_content=barrauol"
-                >UOL PLAY</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav-items-support">
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <a href="">BUSCA</a>
-            </li>
-            <li>
-              <img src="" alt="" />
-              <a href="">BATE PAPO</a>
-            </li>
-            <li>
-              <img src="" alt="" />
-              <a href="">EMAIL</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header>
-      <div class="header-options">
-        <button>
-          <span><img src="./assets/Header/menu.svg" alt="Menu lateral" /></span>
-        </button>
-
-        <div>
+    <header class="ob-header">
+      <div class="ob-header-items">
+        <div class="ob-header-items-options">
           <button>
-            <i
-              ><img
+            <span
+              ><img src="./assets/Header/menu.svg" alt="Menu lateral"
+            /></span>
+          </button>
+
+          <div class="options-journal-newsletter">
+            <a>
+              <img
                 src="./assets/Header/livro.svg"
                 alt="Icone para a aba Jornal"
-            /></i>
-            <p>Jornal</p>
-          </button>
+              />
+              <span>Jornal</span>
+            </a>
 
-          <button class="nav-newsletter">
-            <i
-              ><img
+            <a class="options-journal-newsletter">
+              <img
                 src="./assets/Header/newsletter.svg"
                 alt="Icone para a aba Newsletter"
-            /></i>
-            <p>Newsletter</p>
-          </button>
+              />
+              <span>Newsletter</span>
+            </a>
+          </div>
+
+          <img
+            src="./assets/Header/logo.svg"
+            alt="Logo portal de notícias Orbi"
+          />
+
+          <form>
+            <div>
+              <img src="./assets/header/lupa.svg" alt="" />
+            </div>
+            <input type="text" placeholder="Busca" />
+          </form>
         </div>
-
-        <img
-          src="./assets/Header/logo.svg"
-          alt="Logo portal de notícias Orbi"
-        />
-
-        <form>
-          <input placeholder="Busca" />
-          <button>
-            <i
-              ><img src="./assets/Header/lupa.svg" alt="botão de pesquisa"
-            /></i>
-          </button>
-        </form>
+        <nav class="ob-nav">
+          <ul>
+            <li><a href="/sao-paulo">São Paulo</a></li>
+            <li><a href="/entretenimento">Entretenimento</a></li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/esportes">Esportes</a>
+            </li>
+            <li><a href="/brasil">Brasil</a></li>
+            <li><a href="/colunistas">Colunistas</a></li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/newsletter">Newsletter</a>
+            </li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/tags/webstories"
+                >Web Stories</a
+              >
+            </li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/orbi-estudio?d=1"
+                >Orbi Estúdio</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <ul>
-        <li><a href="./index.html">São Paulo</a></li>
-        <li><a href="#">Entretenimento</a></li>
-        <li><a href="#">Esportes</a></li>
-        <li><a href="#">Brasil</a></li>
-        <li><a href="#">Colunistas</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">Web Stories</a></li>
-        <li><a href="#">Orbi Estúdio</a></li>
-      </ul>
     </header>
+
+    <main class="ob-article-container">
+      <section class="ob-article-content">
+        <article>
+          <h3 class="chapeu"><span class="before"></span> MOBILIDADE</h3>
+
+          <h1>Rodoanel Norte usará sistema free flow; entenda como funciona</h1>
+          <h2>
+            Governo pretende ampliar tecnologia para todas as rodovias do estado
+            e "aposentar" todas as praças de pedágio
+          </h2>
+          <div class="info">
+            <a href="/autores/orbi"
+              ><img
+                src="/assets/article/orbi.webp"
+                onerror='this.src="/themes/default/assets/img/orbi.png"'
+            /></a>
+            <div class="info-post">
+              <span>Orbi</span>
+              <div class="info-post-publishDate">
+                <span>23/04/2023 - 13:23</span> <span></span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
