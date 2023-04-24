@@ -4,21 +4,8 @@
     --text-white:#fff;
     --box-shadow:#0000000a;
 
-    --verdePadrao: #00861f;
-    --verdeEscuro: #26603c;
-    --verdeClaro: #20c634;
-    --roxoPadrao: #812ccb;
-    --cinzaPadrao: #909090;
-    --cinzaClaro: #efefef;
-    --azulPadrao: #1462a3;
-    --cinzaEscuro: #4e4e4e;
-    --douradoPadrao: #b79116;
-    --douradoEscuro: #937100;
-    --vinho: #67161e;
     --pretoPadrao: #1c1c1d;
-    --branco: #fcfcfc;
-    --vermelhoPadrao: #d5150b;
-    --laranjaEscuro: #ba5c0f;
+
 }
 * {
     margin: 0;
@@ -32,7 +19,7 @@
 body {
     background-color: #fafafa;
     overflow-x: hidden;
-    font-family: pacaembu-light;
+    @font-face { font-family: "Pacaembu"; src: url("Pacaembu.woff"); }
     -ms-overflow-style: none;
 }
 h1 {
@@ -270,9 +257,6 @@ button {
     top: 5px;
 }
 
-
-
-
 .ob-article-content > article > .info {
     display:flex;
     flex-direction: row;
@@ -311,4 +295,22 @@ button {
     font-size: 14px;
     line-height: 16px;
     font-family: pacaembu-light;
+}
+
+.article-content * {
+    margin-bottom: 30px!important;
+}
+
+.article-content h2 {
+    font-family: pacaembu-ultra;
+    color: #ff0a6b;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.article-content p {
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: pacaembu-medium;
 }
