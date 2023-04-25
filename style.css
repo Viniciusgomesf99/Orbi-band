@@ -68,11 +68,12 @@ button {
 }
 
 .ob-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-right: 24px;
+    background-color: var(--bg-color);
+    
+    position:sticky;
+    box-shadow: 0 8px 16px #0000000a;
+    z-index: 30;
+    top:0;
 }
 
 .ob-header-items {
@@ -87,10 +88,9 @@ button {
 .ob-header-items .ob-header-items-options {
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-size: 0.68rem;
-    height: 136px;
+    
 }
 
 .ob-header-items .ob-header-items-options .options-journal-newsletter {
@@ -107,9 +107,31 @@ button {
     gap: 20px;
     background-color: var(--text-white);
     border-radius: 30px;
-    padding: 12px 22px;}
+    padding: 12px 22px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);}
+    
 
 .ob-header-items .ob-header-items-options .options-journal-newsletter > a  > span {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--gray-strong);
+}
+
+.ob-header-items .ob-header-items-options .options-journal-newsletter .options-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--text-white);
+    border-radius: 30px;
+    padding: 12px 22px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);}
+    
+
+.ob-header-items .ob-header-items-options .options-journal-newsletter .options-newsletter  > span {
     font-weight: bold;
     font-size: 11px;
     line-height: 15px;
@@ -130,7 +152,13 @@ button {
     box-shadow: 0 8px 16px var(--box-shadow);
 }
 
-.ob-header-items > div > form {
+.ob-header-items .ob-header-items-options > img {
+    margin-right:197px;
+    width: 156px;
+    height: 62px;
+}
+
+.ob-header-items .ob-header-items-options > form {
     display: flex;
     align-items: center;
     background-color: var(--text-white);
@@ -138,9 +166,11 @@ button {
     border-radius: 20px;
     border: 1px solid var(--border-gray);
     padding: 5px 10px 5px 15px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
   }
 
-  .ob-header-items > div > form > div {
+  .ob-header-items .ob-header-items-options > form > div {
     background-color: var(--pink-strong);
     border-radius: 50%;
     padding: 10px;
@@ -152,22 +182,22 @@ button {
     cursor: pointer;
   }
 
-  .ob-header-items > div > form > div > img {
+  .ob-header-items .ob-header-items-options > form > div > img {
     width: 15px;
     height: 15px;
   }
-  .ob-header-items > div > form > input {
+  .ob-header-items .ob-header-items-options > form > input {
     font-size: 11px;
     width: 100%;
     color: var(--gray-strong);
     min-width: 40px;
   }
-  .ob-header-items > div > form input {
+  .ob-header-items .ob-header-items-options > form input {
     flex-grow:1;
     border:none;
   }
   
-  .ob-header-items > div > form button {
+  .ob-header-items .ob-header-items-options > form button {
     height: 30px;
     width: 30px;
     border-radius: 100%;
@@ -177,15 +207,15 @@ button {
     margin-top: 5px;
   }
 
+
+
 .ob-header-items .ob-nav > ul {
     margin-top: 30px;
     display:flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-evenly;
-    font-size: 0.8125rem;
+    justify-content: space-between;
     letter-spacing: -.05rem;
-    font-size: 13px;
     color:var(--text-color);
 }
 
@@ -203,6 +233,7 @@ button {
 .ob-header-items .ob-nav > ul li:active {
     color: var(--gray-strong);
     font-weight: 700;
+    border-bottom: var(--pink-strong) 3px solid;
 }
 
 .mw-article-container {
@@ -528,6 +559,7 @@ button {
 }
 
 .ob-aside-r .ob-maislidas h2 {
+    font-weight: black;
     color: var(--gray-strong);
     font-size: 22px;
     line-height: 26px;
@@ -559,6 +591,7 @@ button {
 
 .ob-aside-r .ob-maislidas .maislidas-box h2 {
     color: var(--gray-strong);
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
