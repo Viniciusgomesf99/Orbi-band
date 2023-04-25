@@ -508,8 +508,7 @@ button {
     position: sticky;
     top: 159px;
     padding-bottom: 36px;
-    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
-    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
+    
 }
 
 .ob-aside-r .ob-maislidas {
@@ -521,7 +520,8 @@ button {
     border-radius: 15px;
     gap: 24px;
     min-height: 531px;
-    margin-top:5px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
 }
 
 .ob-aside-r .ob-maislidas h2 {
