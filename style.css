@@ -601,7 +601,7 @@ button {
     gap: 15px;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 15px;
+    margin: 20px 0px 0px 15px;
 }
 
 .ob-aside-r .ob-newsletter .ob-newsletter-form div {
@@ -636,3 +636,52 @@ button {
     height: 35px;
     padding: 9px 7px 7px 7px; 
 }
+
+.ob-aside-r .ob-socials {
+    background-color: var(--text-white);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
+}
+
+.ob-aside-r .ob-socials h2 {
+    font-weight: bold;
+    color: var(--gray-strong);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.ob-aside-r .ob-socials h2 b {
+    color: var(--pink-strong);
+}
+
+.ob-aside-r .ob-socials .ob-socials-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.ob-aside-r .ob-socials .ob-socials-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #ff0a6b;
+    transition: .5s;
+}
+
+.ob-aside-r .ob-socials .ob-socials-icons a:hover {
+    background-color: var(--pink-strong);
+    border: 1px solid var(--pink-strong);
+}
+
+.ob-aside-r .ob-socials .ob-socials-icons a img:hover {
+    filter: brightness(45);
+    animation: scaleFooter .3s;
+}
+
