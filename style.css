@@ -1,10 +1,14 @@
 :root {
     --nav-bg:#262626;
-    --header-bg:#fafafa;
     --text-white:#fff;
     --box-shadow:#0000000a;
-
-    --pretoPadrao: #1c1c1d;
+    --pink-strong:#ff0a6b;
+    --gray-strong:#231f20;
+    --bg-beige:#f3f3f3;
+    --text-article:#5d5d5d;
+    --regular-gray:#726f73;
+    --border-gray:#70707008;
+    --bg-color:#fafafa;
 
 }
 * {
@@ -17,7 +21,7 @@
     text-decoration: none;
 }
 body {
-    background-color: #fafafa;
+    background-color: var(--bg-color);
     overflow-x: hidden;
     @font-face { font-family: "Pacaembu"; src: url("Pacaembu.woff"); }
     -ms-overflow-style: none;
@@ -102,7 +106,7 @@ button {
     font-family: pacaembu-bold;
     font-size: 11px;
     line-height: 15px;
-    color: #231f20;
+    color: var(--gray-strong);
 }
 
 .ob-header-items .ob-header-items-options .options-journal-newsletter > button, 
@@ -122,15 +126,15 @@ button {
 .ob-header-items > div > form {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--text-white);
     flex-direction: row-reverse;
     border-radius: 20px;
-    border: 1px solid #70707008;
+    border: 1px solid var(--border-gray);
     padding: 5px 10px 5px 15px;
   }
 
   .ob-header-items > div > form > div {
-    background-color: #ff0a6b;
+    background-color: var(--pink-strong);
     border-radius: 50%;
     padding: 10px;
     display: flex;
@@ -148,7 +152,7 @@ button {
   .ob-header-items > div > form > input {
     font-size: 11px;
     width: 100%;
-    color: #231f20;
+    color: var(--gray-strong);
     min-width: 40px;
   }
   .ob-header-items > div > form input {
@@ -162,7 +166,7 @@ button {
     border-radius: 100%;
     background:var(--second-color);;
     text-align: center;
-    color:white;
+    color:var(--text-white);
     margin-top: 5px;
   }
 
@@ -181,7 +185,7 @@ button {
 .ob-header-items .ob-nav > ul > li {
     position: relative;
     font-family: pacaembu-medium;
-    color: #726f73;
+    color: var(--regular-gray);
     font-size: 13px;
     padding-bottom: 20px;
     line-height: 17px;
@@ -190,7 +194,7 @@ button {
 }
 
 .ob-header-items .ob-nav > ul li:active {
-    color: #231f20;
+    color: var(--gray-strong);
     font-weight: 700;
 }
 
@@ -202,14 +206,51 @@ button {
     gap: 24px;
 }
 
+.ob-ad {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.mw-article-container .ob-ad .ob-ad-area {
+    width: 970px;
+    height: 250px;
+    background-color: var(--regular-gray);
+}
+
+.ob-ad span {
+    text-align: center;
+    font-size: .5em;
+    line-height: 24px;
+    color: #7e7e7e;
+    bottom: -2px;
+    align-self: center; 
+}
+
 .mw-article-container .ob-article-container {
     display: flex;
     gap: 30px;
     position: relative;
 }
 
+
 .ob-article-container .ob-aside {
     margin-top:257px;
+    position: sticky;
+    top: 159px;
+    left: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    width: 40px;
+    overflow: visible;
+    gap: 5px;
+    z-index: 19;
 }
 
 .ob-article-container .ob-aside .ob-aside-socials {
@@ -230,7 +271,7 @@ button {
 }
 
 .ob-article-content > article > h2 {
-    color: #726f73;
+    color: var(--regular-gray);
     font-size: 22px;
     line-height: 28px;
     font-weight: 400;
@@ -239,7 +280,7 @@ button {
 }
 
 .ob-article-content > article .chapeu {
-    color: #231f20;
+    color: var(--gray-strong);
     font-size: 14px;
     padding-left: 20px;
     position: relative;
@@ -249,7 +290,7 @@ button {
     content: "";
     width: 5px;
     height: 5px;
-    background-color: #ff0a6b;
+    background-color: var(--pink-strong);
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -277,7 +318,7 @@ button {
 }
 
 .ob-article-content > article > .info .info-post span:first-of-type {
-    color: #726f73;
+    color: var(--regular-gray);
     font-family: inherit;
 }
 
@@ -291,7 +332,7 @@ button {
 }
 
 .ob-article-content > article > .info .info-post .info-post-publishDate span {
-    color: #726f73;
+    color: var(--regular-gray);
     font-size: 14px;
     line-height: 16px;
     font-family: pacaembu-light;
@@ -303,14 +344,88 @@ button {
 
 .article-content h2 {
     font-family: pacaembu-ultra;
-    color: #ff0a6b;
+    color: var(--pink-strong);
     font-size: 25px;
     line-height: 29px;
 }
 
 .article-content p {
-    color: #5d5d5d;
+    color: var(--text-article);
     font-size: 18px;
     line-height: 32px;
     font-family: pacaembu-medium;
+}
+
+
+.ob-aside-r .ob-ad .ob-ad-area {
+    width:300px;
+    height: 250px;
+    background-color: var(--regular-gray);
+}
+
+.ob-aside-r .ob-ad {
+    margin-bottom: 5px!important;
+    background-color: var(--bg-color);
+}
+
+.ob-aside-r {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 24px;
+    position: sticky;
+    top: 159px;
+    padding-bottom: 36px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
+}
+
+.ob-aside-r .ob-maislidas {
+    background-color: var(--text-white);
+    padding: 30px;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 24px;
+    min-height: 531px;
+    margin-top:5px;
+}
+
+.ob-aside-r .ob-maislidas h2 {
+    font-family: pacaembu-ultra;
+    color: var(--gray-strong);
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.ob-aside-r .ob-maislidas .maislidas-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px!important;
+}
+
+.ob-aside-r .ob-maislidas .maislidas-box span {
+    min-width: 65px;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-strong);
+    font-size: 40px;
+    line-height: 44px;
+    background-color: var(--bg-beige);
+    border-radius: 10px;
+    font-family: barlow-black; 
+}
+
+.ob-aside-r .ob-maislidas .maislidas-box h2 {
+    color: var(--gray-strong);
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
 }
