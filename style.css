@@ -15,42 +15,46 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
-
 @font-face {
     font-family: "pacaembu-light";
     src: local(pacaembu-light), url(./fonts/Pacaembu-Light.ttf);
     font-weight:300;
+    font-display: swap;
  }
 
  @font-face {
     font-family: "pacaembu-regular";
     src: local(pacaembu-regular), url(./fonts/Pacaembu-Regular.ttf);
     font-weight:400;
+    font-display: swap;
  }
 
  @font-face {
     font-family: "pacaembu-medium";
     src: local(pacaembu-medium), url(./fonts/Pacaembu-Medium.ttf);
     font-weight:500;
+    font-display: swap;
  }
 
  @font-face {
     font-family: "pacaembu-bold";
     src: local(pacaembu-bold), url(./fonts/Pacaembu-Bold.ttf);
     font-weight:700;
+    font-display: swap;
  }
 
  @font-face {
     font-family: "pacaembu-black";
     src: local(pacaembu-black), url(./fonts/Pacaembu-Black.ttf);
     font-weight:900;
+    font-display: swap;
  }
 
  @font-face {
     font-family: "pacaembu-ultra";
     src: local(pacaembu-ultra), url(./fonts/Pacaembu-Ultra.ttf);
     font-weight:950;
+    font-display: swap;
  }
 
 * {
@@ -686,7 +690,6 @@ input {
     line-height: 44px;
     background-color: var(--bg-beige);
     border-radius: 10px;
-    font-family: barlow;
     font-family:'pacaembu-black'
 }
 
