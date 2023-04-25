@@ -119,14 +119,14 @@ button {
     flex-direction: column;
     user-select: none;
     padding: 20px 0 0 24px;
-    padding-right: 24px;
 }
 
 .ob-header-items > .ob-header-items-options {
-    display:flex;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
+    padding-right: 24px;
     
 }
 
@@ -299,10 +299,6 @@ button {
     width: 970px;
     height: 250px;
 }
-.mw-article-container > .ob-ad > .ob-ad-area > img {
-    object-fit: contain;
-}
-
 
 .ob-ad > span {
     text-align: center;
@@ -358,20 +354,20 @@ button {
     
 }
 
-.ob-article-content > article > h2 {
-    color: var(--regular-gray);
-    font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 12px;
-    font-family: 'pacaembu-medium';
-}
-
 .ob-article-content > article > h1 {
     color: var(--gray-strong);
     font-size: 44px;
     line-height: 48px;
     font-family:'pacaembu-bold';
     margin-top: 7px;
+}
+
+.ob-article-content > article > h2 {
+    color: var(--regular-gray);
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 48px;
+    font-family: 'pacaembu-medium';
 }
 
 .ob-article-content > article .chapeu {
