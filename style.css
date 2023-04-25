@@ -10,6 +10,8 @@
     --border-gray:#70707008;
     --bg-color:#fafafa;
     --gray-strongest:#1c1c1d;
+    --bg-input:#727272;
+    --btn-newsletter:#d6d6d6;
 
 }
 @import url('https://fonts.cdnfonts.com/css/pacaembu-trial');
@@ -559,4 +561,78 @@ button {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
+}
+
+.ob-aside-r .ob-newsletter {
+    border-radius: 15px;
+    background-color: var(--text-white);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
+}
+
+.ob-aside-r .ob-newsletter h2 {
+    color: var(--gray-strong);
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.ob-aside-r .ob-newsletter h3 {
+    color: var(--pink-strong);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.ob-aside-r .ob-newsletter p {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-article);
+}
+
+.ob-aside-r .ob-newsletter .ob-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 15px;
+}
+
+.ob-aside-r .ob-newsletter .ob-newsletter-form div {
+    height: 44px;
+    width: 100%;
+    border-radius: 22px;
+    background-color: var(--text-white);
+    display: flex;
+    align-items: center;
+    padding: 4px 4px 4px 30px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
+}
+
+.ob-aside-r .ob-newsletter .ob-newsletter-form div input {
+    height: 35px;
+    width: 100%;
+    font-weight: medium;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--bg-input);
+}
+
+.ob-aside-r .ob-newsletter .ob-newsletter-form div button {
+    background-color: var(--btn-newsletter);
+    border-radius: 50%;
+    box-shadow: -5px 0 10px 1px rgb(137 137 137/20%);
+}
+
+.ob-aside-r .ob-newsletter .ob-newsletter-form div button img {
+    width: 35px;
+    height: 35px;
+    padding: 9px 7px 7px 7px; 
 }
