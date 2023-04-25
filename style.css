@@ -540,7 +540,6 @@ input {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-image: linear-gradient(transparent,rgb(0 0 0/80%));
 }
 
 .article-related > .related > .related-box > header {
@@ -577,8 +576,6 @@ input {
     width: 100%;
     height: 100%;
     position: initial;
-    z-index: 3;
-    
 }
 
 .article-related > .related > .related-box > a > div {
@@ -587,6 +584,8 @@ input {
     gap: 12px;
     z-index: 3;
     padding:10px 15px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6488970588235294) 20%, rgba(0,0,0,1) 100%);
 }
 
 .article-related > .related > .related-box > a > div > .chapeuCTA {
@@ -607,7 +606,7 @@ input {
     display: block;
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 6px;
 }
 
 
@@ -708,7 +707,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    
     -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
     box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
 }
@@ -716,7 +715,7 @@ input {
 .ob-aside-r > .ob-newsletter > h2 {
     color: var(--gray-strong);
     margin: 10px 0 5px;
-    font-family:'pacaembu-bold'
+    font-family:'pacaembu-bold';
     font-size: 26px;
     line-height: 30px;
 }
@@ -748,7 +747,7 @@ input {
     border-radius: 22px;
     background-color: var(--text-white);
     display: flex;
-    align-items: center;
+    align-items: start;
     padding: 4px 4px 4px 30px;
     -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
     box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
@@ -760,6 +759,7 @@ input {
     font-family:'pacaembu-medium';
     font-size: 12px;
     line-height: 20px;
+    
     color: var(--bg-input);
 }
 
