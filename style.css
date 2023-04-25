@@ -211,6 +211,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 25px;
 }
 
 .ob-ad {
@@ -685,3 +686,54 @@ button {
     animation: scaleFooter .3s;
 }
 
+.ob-aside-r .ob-recommended {
+    background-color: var(--text-white);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    min-height: 434px;
+    -webkit-box-shadow: 0 0 7px 6px rgb(137 137 137/4%);
+    box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
+}
+.ob-aside-r .ob-recommended h2 {
+    font-weight:black ;
+    color: var(--gray-strong);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.ob-aside-r .ob-recommended h2 b {
+    color: var(--pink-strong);
+}
+
+.ob-aside-r .ob-recommended .ob-recommended-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.ob-aside-r .ob-recommended .ob-recommended-box img {
+    width: 65px;
+    min-width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.ob-aside-r .ob-recommended .ob-recommended-box h2 {
+    color: var(--gray-strong);
+    font-size: 14px;
+    line-height: 16px;
+    font-family: inherit;
+}
+
+.ob-aside-r .ob-ad-vertical{
+    height: 624px !important;
+}
+
+.ob-aside-r .ob-ad-vertical .ob-ad-vertical-area{
+    width: 300px;
+    height: 600px;
+}
