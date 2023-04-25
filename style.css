@@ -185,6 +185,11 @@ input {
     
 }
 
+.ob-header-items > .ob-header-items-options > button > span > img {
+    width:18px;
+    height:14px;
+}
+
 .ob-header-items > .ob-header-items-options > .options-journal-newsletter {
     display: flex;
     flex-direction: row;
@@ -209,6 +214,11 @@ input {
     font-size: 11px;
     line-height: 15px;
     color: var(--gray-strong);
+}
+
+.ob-header-items > .ob-header-items-options > .options-journal-newsletter a > img {
+    width:22px;
+    height:20px;
 }
 
 .ob-header-items > .ob-header-items-options > .options-journal-newsletter > .options-newsletter {
@@ -309,7 +319,6 @@ input {
     align-items: center;
     list-style: none;
     justify-content: space-between;
-    letter-spacing: -.05rem;
     color:var(--text-color);
     width:100%;
 }
@@ -349,8 +358,9 @@ input {
     overflow: hidden;
 }
 
-.mw-article-container > .ob-ad > .ob-ad-area {
-    
+.mw-article-container > .ob-ad > .ob-ad-area > img {
+    width: auto;
+    height: auto;
 }
 
 .ob-ad > span {
@@ -405,6 +415,11 @@ input {
     max-width: 850px;
     padding-bottom: 36px;
     width: 75%;
+}
+
+.article-content > figure > img {
+    width:auto;
+    height:auto;
 }
 
 .ob-article-content > article {
@@ -823,6 +838,11 @@ input {
     animation: scaleFooter .3s;
 }
 
+.ob-aside-r > .ob-socials > .ob-socials-icons > a > img {
+    width:18px;
+    height:18px;
+}
+
 .ob-aside-r > .ob-recommended {
     background-color: var(--text-white);
     padding: 25px;
@@ -866,10 +886,12 @@ input {
     font-family: inherit;
 }
 
-.ob-aside-r > .ob-ad-vertical{
-    height: 624px !important;
+.ob-aside-r > .ob-ad > .ob-ad-area > img {
+    width:auto;
+    height:auto;
 }
 
-.ob-aside-r > .ob-ad-vertical > .ob-ad-vertical-area{
-    
+.ob-aside-r > .ob-ad-vertical{
+    height: 624px !important;
+    width: auto;
 }
