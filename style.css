@@ -14,9 +14,44 @@
     --btn-newsletter:#d6d6d6;
 
 }
-@import url('https://fonts.cdnfonts.com/css/pacaembu-trial');
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
 
+@font-face {
+    font-family: "pacaembu-light";
+    src: local(pacaembu-light), url(./fonts/Pacaembu-Light.ttf);
+    font-weight:300;
+ }
+
+ @font-face {
+    font-family: "pacaembu-regular";
+    src: local(pacaembu-regular), url(./fonts/Pacaembu-Regular.ttf);
+    font-weight:400;
+ }
+
+ @font-face {
+    font-family: "pacaembu-medium";
+    src: local(pacaembu-medium), url(./fonts/Pacaembu-Medium.ttf);
+    font-weight:500;
+ }
+
+ @font-face {
+    font-family: "pacaembu-bold";
+    src: local(pacaembu-bold), url(./fonts/Pacaembu-Bold.ttf);
+    font-weight:700;
+ }
+
+ @font-face {
+    font-family: "pacaembu-black";
+    src: local(pacaembu-black), url(./fonts/Pacaembu-Black.ttf);
+    font-weight:900;
+ }
+
+ @font-face {
+    font-family: "pacaembu-ultra";
+    src: local(pacaembu-ultra), url(./fonts/Pacaembu-Ultra.ttf);
+    font-weight:950;
+ }
 
 * {
     margin: 0;
@@ -30,7 +65,7 @@
 body {
     background-color: var(--bg-color);
     overflow-x: hidden;
-    font-family: 'Pacaembu Trial', sans-serif;
+    font-family: 'pacaembu-regular';
     -ms-overflow-style: none;
 }
 h1 {
@@ -40,12 +75,13 @@ h1 {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    font-family:'pacaembu-bold'
 }
 h2 {
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
+    font-family:'pacaembu-bold'
 }
 h3 {
         display: block;
@@ -54,7 +90,7 @@ h3 {
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        font-weight: bold;
+        font-family:'pacaembu-bold'
 }
 li {
     list-style: none;
@@ -83,6 +119,7 @@ button {
     flex-direction: column;
     user-select: none;
     padding: 20px 0 0 24px;
+    padding-right: 24px;
 }
 
 .ob-header-items .ob-header-items-options {
@@ -113,7 +150,7 @@ button {
     
 
 .ob-header-items .ob-header-items-options .options-journal-newsletter > a  > span {
-    font-weight: bold;
+    font-family:pacaembu-bold;
     font-size: 11px;
     line-height: 15px;
     color: var(--gray-strong);
@@ -132,7 +169,7 @@ button {
     
 
 .ob-header-items .ob-header-items-options .options-journal-newsletter .options-newsletter  > span {
-    font-weight: bold;
+    font-family: 'pacaembu-bold';
     font-size: 11px;
     line-height: 15px;
     color: var(--gray-strong);
@@ -207,21 +244,25 @@ button {
     margin-top: 5px;
   }
 
-
+  .ob-header-items .ob-nav {
+    display:flex;
+    padding-right:24px;
+  }
 
 .ob-header-items .ob-nav > ul {
     margin-top: 30px;
     display:flex;
-    flex-direction: row;
+    align-items: center;
     list-style: none;
     justify-content: space-between;
     letter-spacing: -.05rem;
     color:var(--text-color);
+    width:100%;
 }
 
 .ob-header-items .ob-nav > ul > li {
     position: relative;
-    font-weight: medium;
+    font-family: 'pacaembu-medium';
     color: var(--regular-gray);
     font-size: 13px;
     padding-bottom: 20px;
@@ -232,7 +273,7 @@ button {
 
 .ob-header-items .ob-nav > ul li:active {
     color: var(--gray-strong);
-    font-weight: 700;
+    font-family:'pacaembu medium'
     border-bottom: var(--pink-strong) 3px solid;
 }
 
@@ -309,20 +350,25 @@ button {
     width: 75%;
 }
 
+.ob-article-content > article {
+    display:flex;
+    flex-direction: column;
+    
+}
+
 .ob-article-content > article > h2 {
     color: var(--regular-gray);
     font-size: 22px;
     line-height: 28px;
-    font-weight: 400;
     margin-bottom: 12px;
-    font-weight: medium;
+    font-family: 'pacaembu-medium';
 }
 
 .ob-article-content > article > h1 {
     color: var(--gray-strong);
     font-size: 44px;
     line-height: 48px;
-    font-weight: 700;
+    font-family:'pacaembu-bold';
     margin-top: 7px;
 }
 
@@ -375,14 +421,14 @@ button {
 }
 
 .ob-article-content > article > .info .info-post .info-post-publishDate span:first-of-type {
-    font-weight: light;
+    font-family: 'pacaembu-light';
 }
 
 .ob-article-content > article > .info .info-post .info-post-publishDate span {
     color: var(--regular-gray);
     font-size: 14px;
     line-height: 16px;
-    font-weight: light;
+    font-family: 'pacaembu-light';
 }
 
 .article-content * {
@@ -390,7 +436,7 @@ button {
 }
 
 .article-content h2 {
-    font-weight: 900;
+    font-family:'pacaembu-black';
     color: var(--pink-strong);
     font-size: 25px;
     line-height: 29px;
@@ -400,7 +446,13 @@ button {
     color: var(--text-article);
     font-size: 18px;
     line-height: 32px;
-    font-weight: medium;
+    font-family:'pacaembu-medium'
+}
+
+.article-content a {
+    color: var(--pink-strong);
+    text-decoration: underline;
+    font-family: 'pacaembu-medium';
 }
 
 .article-related {
@@ -412,10 +464,11 @@ button {
 }
 
 .article-related h2 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom:30px;
     color: var(--gray-strongest);
-    font-weight: 900;
+    font-family:'pacaembu-ultra'
 }
 
 .article-related .related {
@@ -450,7 +503,7 @@ button {
 
 .article-related .related .related-box header span {
     color: #fafafa;
-    font-weight: medium;
+    font-family: 'pacaembu-medium';
     font-size: 9px;
     line-height: 14px;
     text-transform: uppercase;
@@ -488,7 +541,7 @@ button {
     font-size: 14px;
     padding-left: 10px;
     position: relative;
-    font-weight: medium;
+    font-family: 'pacaembu-medium';
     text-transform: uppercase;
 }
 
@@ -534,7 +587,7 @@ button {
 }
 
 .ob-aside-r {
-    width: 27%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -559,11 +612,11 @@ button {
 }
 
 .ob-aside-r .ob-maislidas h2 {
-    font-weight: black;
+    font-family:'pacaembu-black'
     color: var(--gray-strong);
     font-size: 22px;
     line-height: 26px;
-    font-weight: 900;
+    
     text-transform: uppercase;
 }
 
@@ -586,15 +639,15 @@ button {
     background-color: var(--bg-beige);
     border-radius: 10px;
     font-family: barlow;
-    font-weight: black;
+    font-family:'pacaembu-black'
 }
 
 .ob-aside-r .ob-maislidas .maislidas-box h2 {
     color: var(--gray-strong);
-    font-weight: 400;
+    font-family:'pacaembu-regular';
     font-size: 14px;
     line-height: 16px;
-    font-weight: 400;
+
 }
 
 .ob-aside-r .ob-newsletter {
@@ -612,7 +665,7 @@ button {
 .ob-aside-r .ob-newsletter h2 {
     color: var(--gray-strong);
     margin: 10px 0 5px;
-    font-weight: bold;
+    font-family:'pacaembu-bold'
     font-size: 26px;
     line-height: 30px;
 }
@@ -653,7 +706,7 @@ button {
 .ob-aside-r .ob-newsletter .ob-newsletter-form div input {
     height: 35px;
     width: 100%;
-    font-weight: medium;
+    font-family:'pacaembu-medium'
     font-size: 12px;
     line-height: 20px;
     color: var(--bg-input);
@@ -683,7 +736,7 @@ button {
 }
 
 .ob-aside-r .ob-socials h2 {
-    font-weight: bold;
+    font-family: 'pacaembu-bold';
     color: var(--gray-strong);
     font-size: 18px;
     line-height: 22px;
@@ -731,7 +784,7 @@ button {
     box-shadow: 0 0 7px 6px rgb(137 137 137/20%);
 }
 .ob-aside-r .ob-recommended h2 {
-    font-weight:black ;
+    font-family: 'pacaembu-black';
     color: var(--gray-strong);
     font-size: 18px;
     line-height: 22px;
