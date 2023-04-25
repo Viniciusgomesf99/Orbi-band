@@ -12,6 +12,10 @@
     --gray-strongest:#1c1c1d;
 
 }
+@import url('https://fonts.cdnfonts.com/css/pacaembu-trial');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
+
+
 * {
     margin: 0;
 	padding: 0;
@@ -24,7 +28,7 @@
 body {
     background-color: var(--bg-color);
     overflow-x: hidden;
-    @font-face { font-family: "Pacaembu"; src: url("Pacaembu.woff"); }
+    font-family: 'Pacaembu Trial', sans-serif;
     -ms-overflow-style: none;
 }
 h1 {
@@ -104,7 +108,7 @@ button {
     padding: 12px 22px;}
 
 .ob-header-items .ob-header-items-options .options-journal-newsletter > a  > span {
-    font-family: pacaembu-bold;
+    font-weight: bold;
     font-size: 11px;
     line-height: 15px;
     color: var(--gray-strong);
@@ -185,7 +189,7 @@ button {
 
 .ob-header-items .ob-nav > ul > li {
     position: relative;
-    font-family: pacaembu-medium;
+    font-weight: medium;
     color: var(--regular-gray);
     font-size: 13px;
     padding-bottom: 20px;
@@ -277,7 +281,15 @@ button {
     line-height: 28px;
     font-weight: 400;
     margin-bottom: 12px;
-    font-family: pacaembu-medium;
+    font-weight: medium;
+}
+
+.ob-article-content > article > h1 {
+    color: var(--gray-strong);
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-top: 7px;
 }
 
 .ob-article-content > article .chapeu {
@@ -329,14 +341,14 @@ button {
 }
 
 .ob-article-content > article > .info .info-post .info-post-publishDate span:first-of-type {
-    font-family: pacaembu-light;
+    font-weight: light;
 }
 
 .ob-article-content > article > .info .info-post .info-post-publishDate span {
     color: var(--regular-gray);
     font-size: 14px;
     line-height: 16px;
-    font-family: pacaembu-light;
+    font-weight: light;
 }
 
 .article-content * {
@@ -344,7 +356,7 @@ button {
 }
 
 .article-content h2 {
-    font-family: pacaembu-ultra;
+    font-weight: 900;
     color: var(--pink-strong);
     font-size: 25px;
     line-height: 29px;
@@ -354,7 +366,7 @@ button {
     color: var(--text-article);
     font-size: 18px;
     line-height: 32px;
-    font-family: pacaembu-medium;
+    font-weight: medium;
 }
 
 .article-related {
@@ -404,7 +416,7 @@ button {
 
 .article-related .related .related-box header span {
     color: #fafafa;
-    font-family: pacaembu-medium;
+    font-weight: medium;
     font-size: 9px;
     line-height: 14px;
     text-transform: uppercase;
@@ -442,7 +454,7 @@ button {
     font-size: 14px;
     padding-left: 10px;
     position: relative;
-    font-family: pacaembu-medium;
+    font-weight: medium;
     text-transform: uppercase;
 }
 
@@ -513,7 +525,6 @@ button {
 }
 
 .ob-aside-r .ob-maislidas h2 {
-    font-family: pacaembu-ultra;
     color: var(--gray-strong);
     font-size: 22px;
     line-height: 26px;
@@ -539,7 +550,8 @@ button {
     line-height: 44px;
     background-color: var(--bg-beige);
     border-radius: 10px;
-    font-family: barlow-black; 
+    font-family: barlow;
+    font-weight: black;
 }
 
 .ob-aside-r .ob-maislidas .maislidas-box h2 {
