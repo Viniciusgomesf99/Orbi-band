@@ -13,10 +13,69 @@
     >
   </head>
   <body>
+
+    <header class="ob-header-tablet">
+      <div class="ob-header-items-tablet">
+        <div class="ob-header-items-options-tablet">
+   
+          <img id="logo-header"
+            src="./assets/mobile/logo.svg"
+            alt="Logo portal de notícias Orbi"
+          >
+
+          <div class="ob-header-items-options-r-tablet">
+            <a id="newsletter-header" href="/newsletter">
+              <span>
+                Newsletter
+              </span>
+            </a>
+  
+            <a id="searchbar-header" 
+            href="/search">
+              <img src="./assets/mobile/search.svg" alt="Botão de pesquisa">
+            </a>
+            
+            <button id="sandwich-header">
+              <span
+                ><img src="./assets/Header/menu.svg" alt="Menu lateral"
+              ></span>
+            </button>
+          </div>
+
+          
+          
+        </div>
+        <nav class="ob-nav">
+          <ul>
+            <li><a class="active" href="/sao-paulo">São Paulo</a></li>
+            <li><a href="/entretenimento">Entretenimento</a></li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/esportes">Esportes</a>
+            </li>
+            <li><a href="/brasil">Brasil</a></li>
+            <li><a href="/colunistas">Colunistas</a></li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/newsletter">Newsletter</a>
+            </li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/tags/webstories"
+                >Web Stories</a
+              >
+            </li>
+            <li>
+              <a href="https://orbi.band.uol.com.br/orbi-estudio?d=1"
+                >Orbi Estúdio</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <header class="ob-header">
       <div class="ob-header-items">
         <div class="ob-header-items-options">
-          <button>
+          <button id="sandwich-header">
             <span
               ><img src="./assets/Header/menu.svg" alt="Menu lateral"
             ></span>
@@ -40,25 +99,27 @@
             </a>
           </div>
 
-          <img
+          <img id="logo-header"
             src="./assets/Header/logo.svg"
             alt="Logo portal de notícias Orbi"
           >
-
-          <form class="shadow">
-            <div>
-              <img
-                src="./assets/Header/lupa.svg"
-                alt="Icone lupa para indicar a barra de pesquisa"
+          <div id="searchbar-box">
+            <div class="searchBar-header shadow">
+              <div>
+                <img
+                  src="./assets/Header/lupa.svg"
+                  alt="Icone lupa para indicar a barra de pesquisa"
+                >
+              </div>
+              <input
+                type="text"
+                name="headerSearchbar"
+                id="headerSearchbar"
+                placeholder="Busca"
               >
             </div>
-            <input
-              type="text"
-              name="headerSearchbar"
-              id="headerSearchbar"
-              placeholder="Busca"
-            >
-          </form>
+          </div>
+          
         </div>
         <nav class="ob-nav">
           <ul>
@@ -91,11 +152,10 @@
     <div class="ob-aside-tablet">
       <div class="ob-aside-alt-tablet">
         <span>Ouça</span>
-        <button id="alt-ouca">
+        <button>
           <img
             src="./assets/aside/sound-off-outline.svg"
             alt="ouça a matéria"
-            id="alt-ouca-img"
           >
           <audio
             src="/"
@@ -142,10 +202,7 @@
     <main class="mw-article-container">
       <div class="ob-ad">
         <div class="ob-ad-area">
-          <img
-            src="./assets/article/initial.jpeg"
-            alt="Propaganda da marca Tanquerry de Whiskey"
-          >
+          
         </div>
         <span>PUBLICIDADE</span>
       </div>
@@ -153,11 +210,11 @@
         <h2 id="ob-article-container-h2">Container para o molde do arquivo</h2>
         <div class="ob-aside">
           <div class="ob-aside-alt">
-            <button id="alt-ouca">
+            <button>
               <img
                 src="./assets/aside/sound-off-outline.svg"
                 alt="ouça a matéria"
-                id="alt-ouca-img"
+                class="alt-ouca-img"
               >
               <audio
                 src="/"
@@ -257,10 +314,7 @@
 
             <div class="ob-ad">
               <div class="ob-ad-area">
-                <img
-                  src="./assets/article/aside.JPEG"
-                  alt="Propaganda da empresa Tanquerry de Whiskey"
-                >
+                
               </div>
               <span>PUBLICIDADE</span>
             </div>
@@ -408,10 +462,7 @@
         <aside class="ob-aside-r">
           <div class="ob-ad">
             <div class="ob-ad-area">
-              <img
-                src="./assets/article/aside.jpeg"
-                alt="Propaganda da empresa Tanquerry de Whiskey"
-              >
+              
             </div>
             <span> PUBLICIDADE </span>
           </div>
@@ -514,10 +565,7 @@
 
           <div class="ob-ad">
             <div class="ob-ad-area">
-              <img
-                src="./assets/article/asideMiddle.JPEG"
-                alt="Propaganda para o nono seminario internacional das mães, em são paulo"
-              >
+              
             </div>
             <span> PUBLICIDADE </span>
           </div>
@@ -624,10 +672,7 @@
 
           <div class="ob-ad ob-ad-vertical">
             <div class="ob-ad-area ob-ad-vertical-area">
-              <img
-                src="./assets/article/asideVertical.PNG"
-                alt="Propaganda da empresa Tanquerry de Whiskey"
-              >
+              
             </div>
             <span> PUBLICIDADE </span>
           </div>
