@@ -405,6 +405,10 @@ input {
     position: relative;
 }
 
+#ob-article-container-h2 {
+    display: none;
+}
+
 
 .ob-article-container>.ob-aside {
     margin-top: 257px;
