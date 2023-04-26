@@ -1117,6 +1117,15 @@ div {
         flex-direction: column;
         overflow: hidden;
     }
+
+    .ob-article-content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 850px;
+        padding-bottom: 36px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 860px) {
