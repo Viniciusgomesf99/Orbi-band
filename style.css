@@ -404,7 +404,7 @@ input[type="text" i] {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: red;
+    background-color: var(--btn-newsletter);
 }
 
 .mw-article-container>.ob-ad>.ob-ad-area {
@@ -820,7 +820,7 @@ input[type="text" i] {
     align-items: center;
     max-width: 300px;
     margin: 0 auto;
-    background-color: red;
+    background-color: var(--btn-newsletter);
 }
 
 .ob-aside-r>.ob-ad>.ob-ad-box>.ob-ad-area {
