@@ -813,7 +813,7 @@ input[type="text" i] {
 .ob-aside-r>.ob-ad>.ob-ad-box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     min-height: 250px;
     margin-bottom: 5px !important;
     z-index: 2;
