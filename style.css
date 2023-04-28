@@ -16,6 +16,14 @@
 }
 
 @font-face {
+    font-family: barlow-black;
+    src: url(./fonts/Barlow-Black.ttf) format("opentype");
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap
+}
+
+@font-face {
     font-family: pacaembu-ultra;
     src: url(../fonts/Pacaembu-Ultra.ttf) format("opentype");
     font-style: normal;
@@ -330,7 +338,7 @@ nav {
     height: 15px;
 }
 
-.ob-header-items>.ob-header-items-options>#searchbar-box>div>input {
+.ob-header-items>.ob-header-items-options>#searchbar-box>input {
     font-size: 11px;
     width: 100%;
     color: var(--gray-strong);
@@ -793,8 +801,8 @@ input[type="text" i] {
     padding-bottom: 36px;
     top: 159px;
     z-index: 20;
-
-
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(85px, auto);
 }
 
 .ob-aside-r>.ob-ad {
@@ -830,36 +838,47 @@ input[type="text" i] {
 }
 
 .ob-aside-r>.ob-maislidas {
-    width: 100%;
+    grid-column: span 4;
+    grid-row: auto;
     background-color: var(--text-white);
-    padding: 30px;
+    padding: 28px;
     display: flex;
     height: fit-content;
     flex-direction: column;
     border-radius: 15px;
-    gap: 24px;
-    min-height: 531px;
+}
 
+.maislidas-five {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .ob-aside-r>.ob-maislidas>h2 {
-    font-family: 'pacaembu-black';
+    font-family: 'pacaembu-ultra';
     color: var(--gray-strong);
-    font-size: 14px;
+    font-size: 22px;
     line-height: 26px;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
-.ob-aside-r>.ob-maislidas>.maislidas-box {
+.ob-aside-r>.ob-maislidas>.maislidas-five>.maislidas-box {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 10px !important;
+    gap: 0px 10px;
 }
 
-.ob-aside-r>.ob-maislidas>.maislidas-box>span {
+.ob-aside-r>.ob-maislidas>.maislidas-five>.maislidas-box>h2 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.ob-aside-r>.ob-maislidas>.maislidas-five>.maislidas-box>span {
     min-width: 65px;
-    min-height: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -868,10 +887,11 @@ input[type="text" i] {
     line-height: 44px;
     background-color: var(--bg-beige);
     border-radius: 10px;
-    font-family: 'pacaembu-black'
+    font-family: 'barlow-black';
+    margin: 0;
 }
 
-.ob-aside-r>.ob-maislidas>.maislidas-box>h2 {
+.ob-aside-r>.ob-maislidas>.maislidas-five>.maislidas-box>h2 {
     color: var(--gray-strong);
     font-family: 'pacaembu-regular';
     font-size: 14px;
@@ -886,8 +906,6 @@ input[type="text" i] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
 
 .ob-aside-r>.ob-newsletter>h2 {
@@ -911,13 +929,19 @@ input[type="text" i] {
 }
 
 .ob-aside-r>.ob-newsletter>.ob-newsletter-form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 0px 15px;
+    margin: 20px 0 15px;
+}
+
+.ob-aside-r>.ob-newsletter>.ob-newsletter-form>p {
+    text-align: center;
+    color: var(--gray-strong);
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'pacaembu-bold';
+    text-transform: uppercase;
 }
 
 .ob-aside-r>.ob-newsletter>.ob-newsletter-form>div {
@@ -940,6 +964,11 @@ input[type="text" i] {
     color: var(--bg-input);
 }
 
+.ob-aside-r>.ob-newsletter>.ob-newsletter-form>div>input::placeholder {
+    font-size: 11.5px;
+    color: var(--text-article);
+}
+
 .ob-aside-r>.ob-newsletter>.ob-newsletter-form>div>button {
     background-color: var(--btn-newsletter);
     border-radius: 50%;
@@ -953,17 +982,17 @@ input[type="text" i] {
 }
 
 .ob-aside-r>.ob-socials {
-    background-color: var(--text-white);
+    background-color: #fff;
     padding: 25px;
+    grid-column: span 4;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 20px;
-
+    border-radius: 20px
 }
 
 .ob-aside-r>.ob-socials>h2 {
-    font-family: 'pacaembu-bold';
+    font-family: 'pacaembu-black';
     color: var(--gray-strong);
     font-size: 18px;
     line-height: 22px;
@@ -1013,6 +1042,12 @@ input[type="text" i] {
     border-radius: 20px;
     min-height: 434px;
 
+}
+
+.ob-aside-r>.ob-recommended * {
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .ob-aside-r>.ob-recommended>h2 {
